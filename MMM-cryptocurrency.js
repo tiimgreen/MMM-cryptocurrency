@@ -35,7 +35,7 @@ Module.register('MMM-cryptocurrency', {
         tron: 1958,
         qtum: 1684,
         omisego: 1808,
-        airswap: 2058,  
+        airswap: 2058,
         aelf: 2299,
         aeternity: 1700,
         aion: 2062,
@@ -393,8 +393,7 @@ Module.register('MMM-cryptocurrency', {
                 graphWrapper.className = 'graph'
                 if (this.sparklineIds[apiResult[j].id]) {
                     var graph = document.createElement('img')
-                    graph.src = 'https://files.coinmarketcap.com/generated/sparklines/' + this.sparklineIds[apiResult[j].id] + '.png?cachePrevention=' + Math.random()
-                    console.log(graph.src)
+                    graph.src = 'https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/' + this.sparklineIds[apiResult[j].id] + '.png?cachePrevention=' + Math.random()
                     graphWrapper.appendChild(graph)
                 }
                 tr.appendChild(graphWrapper)
